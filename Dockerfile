@@ -1,7 +1,6 @@
 FROM node:alpine AS node
 
 FROM python:3.7-alpine
-#FROM alpine:3.9
 LABEL io.whalebrew.name cdk
 LABEL io.whalebrew.config.volumes '["~/.aws:/.aws:ro"]'
 LABEL io.whalebrew.config.environment '["VIRTUAL_ENV", "PATH"]'
