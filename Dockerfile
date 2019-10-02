@@ -40,7 +40,7 @@ RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz \
   && apk del .build-deps-yarn
 
-RUN npm install -g aws-cdk@1.6.1
+RUN npm install -g aws-cdk@1.10.1
 ENV AWS_SHARED_CREDENTIALS_FILE /.aws/credentials
 ENV AWS_CONFIG_FILE /.aws/config
 ENTRYPOINT [ "cdk" ]
